@@ -106,19 +106,10 @@ jobs:
           git checkout
           mv *.sdk $THEOS/sdks
 
-      - name: Download YouTube Plus (by version)
+      - name: Download YouTube Plus 
         run: |
           deb_url="https://github.com/Mark02-2012/YTPlusM/releases/download/5.2.1_Freed/com.dvntm.ytlite_5.2.1_iphoneos-arm_patch_zarzel.deb"
           wget "$deb_url" --no-verbose -O ytplus.deb
-
-      - name: Download YouTube Plus (by URL)
-        run: |
-          wget --no-verbose -O ytplus.deb
-          file_type=$(file --mime-type -b ytplus.deb)
-          if [[ "$file_type" != "application/vnd.debian.binary-package" ]]; then
-            echo "::error::Validation failed: The file is not a valid DEB file. Detected type: $file_type."
-            exit 1
-          fi
 
       - name: Clone YouTubeHeader
         if: ${{ inputs.enable_youpip || inputs.enable_ytuhd || inputs.enable_yq || inputs.enable_ryd || inputs.enable_ytabc || inputs.enable_demc || inputs.enable_ytweaks || inputs.enable_gonerino || inputs.enable_youspeed || inputs.enable_YTLCM }}
