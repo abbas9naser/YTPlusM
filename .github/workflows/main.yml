@@ -63,6 +63,18 @@ on:
        required: true
        default: false
 
+      enable_VolumeBoostYT:
+       description: "NEW! Integrate VolumeBoostYT (YTPlusM)"
+       type: boolean
+       required: true
+       default: false
+
+      enable_YouGetCaption:
+       description: "NEW! Integrate YouGetCaption (YTPlusM)"
+       type: boolean
+       required: true
+       default: false
+
       ipa_url:
         description: "URL to the decrypted IPA file"
         default: ""
@@ -89,7 +101,7 @@ on:
 
       info_note:
         description: "TIP: Learn more about integrations in the README via the link below"
-        default: "https://github.com/dayanch96/YTLite#tweak-integration-details"
+        default: "https://github.com/Mark02-2012/YTPlusM#tweak-integration-details"
         type: string
         required: false
 
@@ -111,6 +123,8 @@ jobs:
       enable_gonerino: ${{ inputs.enable_gonerino }}
       enable_youspeed: ${{ inputs.enable_youspeed }}
       enable_ytlcm: ${{ inputs.enable_ytlcm }}
+      enable_VolumeBoostYT: ${{ inputs.enable_VolumeBoostYT }}
+      enable_YouGetCaption: ${{ inputs.enable_YouGetCaption }}
       tweak_version: ${{ inputs.tweak_version }}
 
 
