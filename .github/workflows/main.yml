@@ -209,9 +209,9 @@ jobs:
         run: |
           if [ "${{ env.YT_VERSION }}" = "20.21.6" ]; then
 
-           echo "NOTES_SELECTED=release_notes_prepared.md" >> $GITHUB_ENV
-          else
            echo "NOTES_SELECTED=release_notes_prepared_ios_15.md" >> $GITHUB_ENV
+          else
+           echo "NOTES_SELECTED=release_notes_prepared.md" >> $GITHUB_ENV
           fi
 
       - name: Define compatibility app in release title
