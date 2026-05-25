@@ -57,8 +57,8 @@ on:
        required: true
        default: false
 
-      enable_ytlcm:
-       description: "NEW! Integrate YTLowContrastMode (YTPlusM)"
+      enable_YTLCM:
+       description: "Integrate YTLowContrastMode (YTPlusM)"
        type: boolean
        required: true
        default: false
@@ -70,6 +70,18 @@ on:
        default: false
 
       enable_YouGetCaption:
+       description: "NEW! Integrate YouGetCaption (YTPlusM)"
+       type: boolean
+       required: true
+       default: false
+
+      enable_iamyt:
+       description: "NEW! Integrate IAmYouTube (YTPlusM)"
+       type: boolean
+       required: true
+       default: false
+
+      enable_ytlegacy:
        description: "NEW! Integrate YouGetCaption (YTPlusM)"
        type: boolean
        required: true
@@ -122,9 +134,11 @@ jobs:
       enable_ytweaks: ${{ inputs.enable_ytweaks }}
       enable_gonerino: ${{ inputs.enable_gonerino }}
       enable_youspeed: ${{ inputs.enable_youspeed }}
-      enable_ytlcm: ${{ inputs.enable_ytlcm }}
+      enable_YTLCM: ${{ inputs.enable_YTLCM }}
       enable_VolumeBoostYT: ${{ inputs.enable_VolumeBoostYT }}
       enable_YouGetCaption: ${{ inputs.enable_YouGetCaption }}
+      enable_iamyt: ${{ inputs.enable_iamyt }}
+      enable_ytlegacy: ${{ inputs.enable_ytlegacy }}
       tweak_version: ${{ inputs.tweak_version }}
 
 
@@ -150,9 +164,9 @@ jobs:
       - name: Hide sensitive inputs
         uses: levibostian/action-hide-sensitive-inputs@v1
         with:
-          exclude_inputs: bundle_id,display_name,enable_demc,enable_ryd,enable_ytabc,enable_youpip,enable_yq,enable_ytuhd,enable_ytweaks,enable_gonerino,enable_youspeed,enable_ytlcm,enable_VolumeBoostYT,enable_YouGetCaption,info_note,tweak_version
-          
+          exclude_inputs: bundle_id,display_name,enable_demc,enable_ryd,enable_ytabc,enable_youpip,enable_yq,enable_ytuhd,enable_ytweaks,enable_gonerino,enable_youspeed,enable_YTLCM,enable_VolumeBoostYT,enable_YouGetCaption,enable_iamyt,enable_ytlegacy,info_note,tweak_version
 
+          
       - name: Download and validate IPA
         run: |
           wget "${{ inputs.ipa_url }}" --no-verbose -O youtube.ipa
