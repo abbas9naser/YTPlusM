@@ -12,7 +12,7 @@
   This project is an independent developer modification and is not affiliated with, authorized, maintained, sponsored, or endorsed by Google LLC or YouTube. All product and company names are trademarks of their respective holders.
 </p>
 
-<strong>Fork this repo to build yourself YTPlus and YTPlusM IPAs (with YTPlus from 5.1 to 5.2.1, no 5.2) without DRM Patreon subscription or <a href="https://t.me/Mark02workshop_official">join my telegram channel</a> for updates, communications and pre-built releases.
+<strong>Fork this repo to build yourself YTPlus and YTPlusM IPAs (with YouTube Plus from 5.1 to 5.2.2, no 5.2) without DRM Patreon subscription or <a href="https://t.me/Mark02workshop_official">join my telegram channel</a> for updates, communications and pre-built releases.
 Don't know how to build YTPlus or YTPlusM? Read [How to build YouTube Plus and YTPlusM app using GitHub Actions](#how-to-build-youtube-plus-and-ytplusm-app-using-github-actions) and [What Means YTPlusM and YTPlusM DIY](#what-means-ytplusm-and-ytplusm-diy)</strong>
 
 
@@ -103,7 +103,7 @@ Review by [@qbap](https://github.com/qbap) on ONE Jailbreak: https://onejailbrea
     <li>Mark or unmark the tweaks you want to integrate. Learn more about them in the <a href="#tweak-integration-details">Tweak Integration Details</a> section.</li>
     <li>Prepare a decrypted .ipa file <em>(if you don't know where to find it read <a href="#how-to-find-decrypted-youtube-ipas">this</a>)</em>, then upload it to a file provider (e.g., filebin.net, filemail.com, Dropbox or catbox.moe are recommended). Paste the URL of the decrypted IPA file in the provided field.</li>
     <li><strong>NOTE:</strong> Make sure to provide a direct download link to the file, not a link to a webpage. Otherwise, the process will fail.</li>
-    <li>Enter the YTLite version (starting from 5.1 to 5.2.1 crack, no 5.2; the latest is selected by default). You can also change the BundleID and Display Name if desired.</li>
+    <li>Enter the YTLite version (starting from 5.1 to 5.2.2 crack, no 5.2; the latest is selected by default). You can also change the BundleID and Display Name if desired.</li>
     <li>Make sure all inputs are correct, then click <strong>Run workflow</strong> to start the process.</li>
     <li>Wait for the build to finish. You can download the YouTube Plus app from the releases section of your forked repo. (If you can't find the releases section, go to your forked repo and add /releases to the URL, i.e., github.com/user/YTLite/releases.)</li>
   </ol>
@@ -171,6 +171,8 @@ Added VolumeBoostYT and YouGetCaption
 Created by myself and added YTPlaybackFix
 <li><strong>1.4 (July 12 2026):</strong></li>
 Added YouChooseQuality, YouShare and PleaseDontStopTheMusic + replaced YTLowContrastMode with my new fork of it where I added a setting section
+<li><strong>1.4.2 (July 17 2026):</strong></li>
+Updated YouTube Plus from 5.2.1 to 5.2.2; cracked by <a href="https://www.reddit.com/u/shinewake/s/ZeFbBOkUAa">zarzel and compiled the .deb by myself
 
 ## Supported YouTube Version
 <ul>
